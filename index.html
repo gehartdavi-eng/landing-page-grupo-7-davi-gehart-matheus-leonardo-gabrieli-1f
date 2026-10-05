@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ReAloca — Redistribuindo materiais, gerando possibilidades</title>
+<meta name="description" content="Plataforma que conecta setores de escolas e instituições para localizar e redistribuir materiais parados antes de comprar novos.">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Sora:wght@300;400;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav" id="nav">
+  <a class="brand" href="#topo"><img src="assets/logo.png" alt="" width="34" height="36"><span>Re<b>Aloca</b></span></a>
+  <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false"><i></i><i></i></button>
+  <nav id="menu">
+    <a href="#problema">Problema</a><a href="#como">Como funciona</a><a href="#mvp">O app</a><a href="#diferenciais">Diferenciais</a><a href="#futuro">Próximos passos</a>
+    <a class="btn btn-gold sm" href="#contato">Quero testar</a>
+  </nav>
+</header>
+
+<main id="topo">
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="pill">Grupo 7 · 2º Hackathon IFC Concórdia</p>
+      <h1>Antes de comprar, <strong>por que não realocar?</strong></h1>
+      <p class="lead">O ReAloca conecta quem tem material parado a quem precisa dele. Cadastre, encontre e solicite itens entre setores, direto do celular.</p>
+      <div class="cta-row">
+        <a class="btn btn-gold" href="#contato">Quero testar o ReAloca</a>
+        <a class="btn btn-ghost" href="#mvp">Ver o app por dentro</a>
+      </div>
+      <dl class="mini-stats">
+        <div><dt data-count="10">0</dt><dd>materiais no MVP</dd></div>
+        <div><dt data-count="4">0</dt><dd>categorias</dd></div>
+        <div><dt data-count="60" data-suf="+ dias">0</dt><dd>sem uso, detectados</dd></div>
+      </dl>
+    </div>
+    <div class="hero-phone">
+      <div class="phone tilt" id="tilt"><img src="assets/mvp-inicio.jpg" alt="Tela inicial do app ReAloca com categorias e materiais disponíveis"></div>
+      <div class="chip c1"><span class="dot"></span>Kit Béquer · disponível</div>
+      <div class="chip c2">3 solicitações aguardando você</div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="problema">
+  <div class="wrap">
+    <h2>O problema não é a falta de materiais.<br><span class="gold">É a falta de conexão entre quem tem e quem precisa.</span></h2>
+    <div class="grid4">
+      <article class="card"><div class="ico">📦</div><h3>Materiais ficam sem utilização</h3><p>Cadeiras, monitores e kits de laboratório passam meses parados em um setor.</p></article>
+      <article class="card"><div class="ico">🔍</div><h3>Busca manual</h3><p>Descobrir se alguém tem o item exige mensagens, ligações e sorte.</p></article>
+      <article class="card"><div class="ico">🏢</div><h3>Informação descentralizada</h3><p>Cada setor controla seu estoque do seu jeito, sem visão do todo.</p></article>
+      <article class="card"><div class="ico">⛔</div><h3>Sistema pouco eficiente</h3><p>O resultado: compras repetidas e dinheiro público gasto à toa.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec sand" id="como">
+  <div class="wrap">
+    <h2>Como funciona</h2>
+    <p class="sub">Toque em uma etapa para ver o que acontece.</p>
+    <div class="steps" role="tablist" id="steps">
+      <button class="step on" role="tab" data-i="0"><b>1</b>Material disponível</button>
+      <button class="step" role="tab" data-i="1"><b>2</b>Cadastro</button>
+      <button class="step" role="tab" data-i="2"><b>3</b>Busca</button>
+      <button class="step" role="tab" data-i="3"><b>4</b>Solicitação</button>
+      <button class="step" role="tab" data-i="4"><b>5</b>Redistribuição</button>
+    </div>
+    <div class="step-panel" id="stepPanel" aria-live="polite"><h3></h3><p></p></div>
+  </div>
+</section>
+
+<section class="sec dark" id="mvp">
+  <div class="wrap mvp-grid">
+    <div>
+      <h2>O MVP já funciona</h2>
+      <p class="lead">Desenvolvido em Flutter e Dart: um único código roda no celular, no navegador e no computador.</p>
+      <div class="tabs" id="tabs" role="tablist">
+        <button class="tab on" role="tab" data-t="0">Quem precisa</button>
+        <button class="tab" role="tab" data-t="1">Quem cede</button>
+      </div>
+      <p class="tab-text" id="tabText"></p>
+      <ul class="ticks">
+        <li>Busca por material ou setor</li>
+        <li>Categorias: TI, Laboratório, Escritório e Didático</li>
+        <li>Alerta de item parado há 60 dias</li>
+        <li>Aprovar ou recusar com um toque</li>
+      </ul>
+      <a class="btn btn-gold" href="#contato">Quero testar o ReAloca</a>
+    </div>
+    <div class="phones">
+      <div class="phone p-a" id="pA"><img src="assets/mvp-inicio.jpg" alt="Tela inicial do ReAloca"></div>
+      <div class="phone p-b" id="pB"><img src="assets/mvp-aprovacoes.png" alt="Tela de aprovações do ReAloca"></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="diferenciais">
+  <div class="wrap">
+    <h2>Diferenciais</h2>
+    <div class="feat">
+      <article><h3>Notificações inteligentes</h3><p>Comunicação automática sobre movimentações e solicitações.</p></article>
+      <article><h3>Aprovação de solicitações</h3><p>Controle sobre pedidos de realocação, com opção de aprovar ou recusar.</p></article>
+      <article><h3>Identificação de itens ociosos</h3><p>Localiza recursos parados para estimular a reutilização.</p></article>
+      <article><h3>Realocação em lotes</h3><p>Transfere vários itens simultaneamente, agilizando o processo.</p></article>
+    </div>
+    <h3 class="mt">Para quem é</h3>
+    <div class="chips"><span>Escolas e instituições de ensino</span><span>Professores e servidores</span><span>Setores de materiais e patrimônio</span></div>
+  </div>
+</section>
+
+<section class="sec sand">
+  <div class="wrap">
+    <h2>Por que não só um sistema de patrimônio?</h2>
+    <p class="sub">Soluções como Click.Base, Patrimon.io e QLPatrium cuidam de inventário e controle de bens. O ReAloca foca em outra pergunta: <em>quem mais pode usar isso agora?</em></p>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Recurso</th><th>Gestão patrimonial</th><th class="hl">ReAloca</th></tr></thead>
+      <tbody>
+        <tr><td>Inventário e controle de bens</td><td>✓</td><td class="hl">✓</td></tr>
+        <tr><td>Encontrar material em outro setor</td><td>—</td><td class="hl">✓</td></tr>
+        <tr><td>Alerta de itens ociosos</td><td>—</td><td class="hl">✓</td></tr>
+        <tr><td>Solicitar e aprovar pelo app</td><td>—</td><td class="hl">✓</td></tr>
+        <tr><td>Realocação em lotes</td><td>—</td><td class="hl">✓</td></tr>
+      </tbody></table></div>
+    <p class="note">Comparação qualitativa baseada na descrição pública de cada solução.</p>
+  </div>
+</section>
+
+<section class="sec" id="futuro">
+  <div class="wrap">
+    <h2>5 melhorias a caminho</h2>
+    <ol class="road">
+      <li><b>Tela inicial</b>Informações mais organizadas e ações principais à mão.</li>
+      <li><b>Chat entre setores</b>Um espaço para combinar a entrega do material.</li>
+      <li><b>Navegação</b>Acesso mais simples e intuitivo às áreas do app.</li>
+      <li><b>Cards de materiais</b>Informações claras para identificar e comparar.</li>
+      <li><b>Responsividade</b>Boa experiência em qualquer tamanho de tela.</li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec cta" id="contato">
+  <div class="wrap cta-grid">
+    <div>
+      <img src="assets/logo.png" alt="" width="84" class="cta-logo">
+      <h2>Redistribuindo materiais, gerando possibilidades.</h2>
+      <p class="lead">Deixe seu contato e avise sua instituição: teste o ReAloca e veja quanto já existe parado ao seu redor.</p>
+    </div>
+    <form id="form" novalidate>
+      <label>Nome<input name="nome" required autocomplete="name" placeholder="Seu nome"></label>
+      <label>E-mail<input name="email" type="email" required autocomplete="email" placeholder="voce@instituicao.edu.br"></label>
+      <label>Seu perfil
+        <select name="perfil"><option>Escola ou instituição</option><option>Professor(a) ou servidor(a)</option><option>Setor de materiais e patrimônio</option></select>
+      </label>
+      <button class="btn btn-gold" type="submit">Quero testar o ReAloca</button>
+      <p class="msg" id="msg" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer><img src="assets/logo.png" alt="" width="26"><span>ReAloca · Grupo 7 · 2º Hackathon IFC Concórdia</span><a href="#topo">Voltar ao topo</a></footer>
+<script src="script.js"></script>
+</body>
+</html>
